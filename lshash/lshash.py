@@ -147,7 +147,7 @@ class LSHash(object):
         the original input points stored, and returns the original input point
         in numpy array format.
         """
-        if isinstance(json_or_tuple, basestring):
+        if isinstance(json_or_tuple, str):
             # JSON-serialized in the case of Redis
             try:
                 # Return the point stored as list, without the extra data
